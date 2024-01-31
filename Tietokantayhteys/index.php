@@ -1,4 +1,4 @@
 <?php
-  require "./dbfunctions/dbfunctions.php";
+  require "./dbfunctions.php";
 
   $pdo = connect(); 
