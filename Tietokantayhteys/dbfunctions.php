@@ -79,18 +79,14 @@ function deleteGame($id) {
 }
 
 // find all games from the table 'test_games'
-if($_POST['Show All Games']) {
-    
-    $submit = htmlspecialchars($_POST['Show All Games']);
-    
-    if($submit) {
-        function getAllGamesButton() {
-            $pdo = connect();
-            $sql = "SELECT * FROM test_games";
-            $stm = $pdo->query($sql);
-            $games = $stm->fetchAll(PDO::FETCH_ASSOC);
-            return $games;
-        } 
-    }
+if(isset($_GET['submit'])) {   
+    function getAllGamesButton() {
+        $pdo = connect();
+        $sql = "SELECT * FROM test_games";
+        $stm = $pdo->query($sql);
+        $games = $stm->fetchAll(PDO::FETCH_ASSOC);
+        return $games;
+    } 
 }
+
 ?>

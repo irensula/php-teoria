@@ -66,9 +66,12 @@
 
   <h2>Show All Games Button</h2>
   <!-- show all games button -->
-  <form action='index.php' method='post'>
-  <input type='submit' name='submit' value='Show All Games'>
-  
+  <form action='index.php' method='get'>
+    
+    <input type='submit' name='submit' value='Show All Games'>
+    
+  </form>
+
   <ul>
     <?php
       $games = getAllGamesButton();
@@ -77,6 +80,9 @@
       }
     ?>
   </ul>
+
+   
+  
   
 </body>
 </html>
