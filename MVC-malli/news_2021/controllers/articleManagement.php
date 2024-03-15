@@ -62,7 +62,7 @@ function editArticleController(){
 }
 
 function updateArticleController(){
-    if(isset($_POST['newstitle'], $_POST['newstext'], $_POST['newstime'], $_POST['removedate'], $_POST["id"])){
+    if(isset($_POST['newstitle'], $_POST['newstext'], $_POST['newstime'], $_POST['removedate'], $_POST['section'], $_POST["id"])){
         $title = cleanUpInput($_POST['newstitle']);
         $text = cleanUpInput($_POST['newstext']);
         $time = cleanUpInput($_POST['newstime']);
