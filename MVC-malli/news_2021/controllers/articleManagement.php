@@ -7,6 +7,9 @@ function viewArticlesController(){
     if (isset($_POST['section'])) {
         $section = cleanUpInput($_POST['section']);
         $allnews = getSectionArticles($section);
+        if($section == "Kaikki uutiset") {
+            $allnews = getAllArticles();
+        }
     }
     else {
         $allnews = getAllArticles();

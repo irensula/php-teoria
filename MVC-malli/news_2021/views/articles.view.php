@@ -6,8 +6,9 @@
 
 <div class = "news">
     <form action="/" method="POST">
+        <label for="section"></label>
         <select id="section" name="section">
-            <option value="<?php $allnews ?>">Kaikki uutiset</option>
+            <option value="Kaikki uutiset">Kaikki uutiset</option>
             <option value="Politiikka">Politiikka</option>
             <option value="Talous">Talous</option>
             <option value="Seuraelämä">Seuraelämä</option>
