@@ -19,4 +19,9 @@
     $readFile = fread($file, filesize("memo.txt"));
     echo $readFile;
     
+    // create file in specific  folder
+    $text_3 = "Text_3";
+    $createfile = fopen('./temp/'.'new.txt', 'w');
+    fwrite($createfile, $text_3);
+    fclose($file);
 ?>
